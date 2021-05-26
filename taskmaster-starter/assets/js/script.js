@@ -140,7 +140,7 @@ $(".list-group").on("click", "span", function() {
 
   dateInput.trigger("focus");
 
-})
+});
 
 $(".list-group").on("blur", "input[type='text]", function() {
   var date = $(this)
@@ -157,10 +157,7 @@ $(".list-group").on("blur", "input[type='text]", function() {
   saveTasks();
 
   var taskSpan = $("<span>")
-    .addClass("badge badge-primary badge-pill")
-    .text(date);
-  
-  $(this).replaceWith(taskSpan)
+    .addClass("badge badge-primary badge")
  
 
 })
